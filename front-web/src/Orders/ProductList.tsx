@@ -1,4 +1,3 @@
-import { type } from "os";
 import ProductCard from "./ProductCard";
 import { Product } from "./Types";
 
@@ -12,9 +11,7 @@ function ProductList({ products }: Props) {
             <div className="orders-list-items">
                {products.map(product => (
                    <ProductCard key={product.id} product={product} />
-               ))}
-                
-                
+               ))}    
             </div>
 
         </div>
